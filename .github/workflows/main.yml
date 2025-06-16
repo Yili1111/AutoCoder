@@ -1,0 +1,12 @@
+name: Say Hello
+on: [push]
+
+jobs:
+  job_name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout
+
+      - name: Greeting Message
+        run: echo "Hello, world"
